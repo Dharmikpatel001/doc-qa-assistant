@@ -6,7 +6,8 @@ uvicorn[standard]
 python-multipart
 pydantic
 python-dotenv
-
+streamlit
+    
 # ==========================
 # Gemini API
 # ==========================
