@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+
+  backend:
+
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+
+    container_name: docqa-backend
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./app/data/uploads:/app/app/data/uploads
+      - ./app/data/chroma:/app/app/data/chroma
+
+    restart: unless-stopped
+
+
+
+  frontend:
+
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+
+    container_name: docqa-frontend
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env.docker
+
+    depends_on:
+      - backend
+
+    restart: unless-stopped
