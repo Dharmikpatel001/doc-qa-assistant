@@ -1,0 +1,13 @@
+services:
+
+  - type: web
+    name: doc-qa-backend
+
+    env: docker
+
+    dockerfilePath: ./Dockerfile.backend
+
+    envVars:
+
+      - key: GEMINI_API_KEY
+        sync: false
