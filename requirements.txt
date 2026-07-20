@@ -1,74 +1,15 @@
-# ==========================
-# FastAPI Backend
-# ==========================
 fastapi
 uvicorn[standard]
-python-multipart
-pydantic
-python-dotenv
 streamlit
-    
-# ==========================
-# Gemini API
-# ==========================
+python-dotenv
+python-multipart
 google-genai
-
-# ==========================
-# LangChain
-# ==========================
-langchain
-langchain-google-genai
-langchain-community
-langchain-text-splitters
-
-# ==========================
-# Vector Database
-# ==========================
 chromadb
-
-# ==========================
-# Document Parsing
-# ==========================
 pypdf
 python-docx
 unstructured
-
-# ==========================
-# Tokenization
-# ==========================
-tiktoken
-
-# ==========================
-# HTTP Client
-# ==========================
-httpx
 requests
-
-# ==========================
-# Data Handling
-# ==========================
-pandas
 numpy
-
-# ==========================
-# Logging
-# ==========================
-loguru
-
-# ==========================
-# Testing
-# ==========================
+pandas
 pytest
 pytest-asyncio
-
-# ==========================
-# Code Quality
-# ==========================
-black
-isort
-flake8
-
-# ==========================
-# Production Server
-# ==========================
-gunicorn

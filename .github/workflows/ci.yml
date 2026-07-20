@@ -45,13 +45,7 @@ jobs:
           pytest
 
       - name: Build Backend Docker Image
-        run: |
-          docker build \
-            -f Dockerfile.backend \
-            -t docqa-backend .
+        run: docker build -f Dockerfile.backend -t docqa-backend .
 
       - name: Build Frontend Docker Image
-        run: |
-          docker build \
-            -f Dockerfile.frontend \
-            -t docqa-frontend .
+        run: docker build -f Dockerfile.frontend -t docqa-frontend .
