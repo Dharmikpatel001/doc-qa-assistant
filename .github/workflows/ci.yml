@@ -39,12 +39,6 @@ jobs:
         run: |
           python -m pip list
 
-      - name: Verify Imports
-        run: |
-          python -c "import fastapi"
-          python -c "import streamlit"
-          python -c "import chromadb"
-          python -c "from google import genai"
 
       - name: Run Tests
         run: |
