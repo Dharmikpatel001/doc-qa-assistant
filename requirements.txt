@@ -15,3 +15,5 @@ langchain
 langchain-text-splitters
 pytest
 pytest-asyncio
+dotenv
+os
