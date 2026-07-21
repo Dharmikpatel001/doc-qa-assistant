@@ -11,6 +11,7 @@ unstructured
 requests
 numpy
 pandas
+langchain
+langchain-text-splitters
 pytest
 pytest-asyncio
-langchain-text-splitters
