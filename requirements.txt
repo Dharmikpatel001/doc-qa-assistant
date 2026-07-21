@@ -1,5 +1,4 @@
 fastapi
-uvicorn[standard]
 streamlit
 python-dotenv
 python-multipart
@@ -15,5 +14,3 @@ langchain
 langchain-text-splitters
 pytest
 pytest-asyncio
-dotenv
-os
