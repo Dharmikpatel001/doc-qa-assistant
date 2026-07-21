@@ -1,9 +1,9 @@
 from google import genai
 
-from app.core.config import GEMINI_API_KEY
+from app.core.config import GOOGLE_API_KEY 
 
 client = genai.Client(
-    api_key=GEMINI_API_KEY
+    api_key=GOOGLE_API_KEY 
 )
 
 def generate_answer(context: str, question: str):
